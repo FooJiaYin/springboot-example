@@ -1,0 +1,15 @@
+# Basic
+server:
+  port: 8080
+  http2:
+    enabled: true
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/springboot_db
+    username: springuser
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
